@@ -15,7 +15,7 @@ else:
     import imp
     # Reload python module to avoid errors when updating plugin
     vimeval = imp.reload(vimeval)
-    print vimeval.sum_range()
+    print(vimeval.sum_range())
 EOF
 endfun
 

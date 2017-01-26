@@ -7,12 +7,12 @@ def sum_range():
     (lnum2, col2) = buf.mark('>')
     lines = vim.eval('getline({}, {})'.format(lnum1, lnum2))
     mode = vim.eval('visualmode()')
-    print "mode: %s" % mode
-    print col1, "", col2
+    print("mode: %s" % mode)
+    print(col1, "", col2)
     ret = []
     for line in lines:
         if mode != "v":
-            print "strip"
+            print("strip")
             tmp = line[col1:col2 + 1]
         else:
             tmp = line.strip()
@@ -23,5 +23,5 @@ def sum_range():
             fval = float(val)
             _sum.append(fval)
         except:
-            print "Unable to convert %s" % val
+            print("Unable to convert %s" % val)
     return sum(_sum)
