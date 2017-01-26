@@ -8,7 +8,7 @@ Install
 
 Vim must be compiled with ``+python`` support.
 
-If using [vim-plug](https://github.com/junegunn/vim-plug) add the following to
+If using https://github.com/junegunn/vim-plug add the following to
 `.vimrc`.
 
     Plug 'https://github.com/delijati/vimeval.git'
