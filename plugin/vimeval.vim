@@ -1,7 +1,7 @@
-if has('python')
-    command! -nargs=1 Python python <args>
-elseif has('python3')
+if has('python3')
     command! -nargs=1 Python python3 <args>
+elseif has('python')
+    command! -nargs=1 Python python <args>
 else
     echo "Error: Requires Vim compiled with +python or +python3"
     finish

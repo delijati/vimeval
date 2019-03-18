@@ -22,6 +22,6 @@ def sum_range():
         try:
             fval = float(val)
             _sum.append(fval)
-        except:
+        except Exception:
             print("Unable to convert %s" % val)
     return sum(_sum)
